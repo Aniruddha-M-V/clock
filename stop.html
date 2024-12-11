@@ -72,6 +72,8 @@
             startButton.disabled = true;
             stopButton.disabled = false;
             resetButton.disabled = true;
+            resetButton.style.visibility="hidden";
+            stopButton.style.visibility="visible";
         });
 
         // Stop Button Functionality
@@ -81,6 +83,8 @@
             startButton.disabled = false;
             stopButton.disabled = true;
             resetButton.disabled = false;
+            resetButton.style.visibility = "visible";
+            stopButton.style.visibility="hidden";
         });
 
         // Reset Button Functionality
@@ -92,6 +96,8 @@
             startButton.disabled = false;
             stopButton.disabled = true;
             resetButton.disabled = true;
+            stopButton.style.visibility = "visible";
+            resetButton.style.visibility = "visible";
         });
 
         // Initialize display
