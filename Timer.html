@@ -74,6 +74,7 @@
                 // If both minutes and seconds are invalid (or empty), show error message
                 if (isNaN(minutes) || isNaN(seconds) || minutes < 0 || seconds < 0 || seconds >= 60 || minutes === 0 && seconds === 0) {
                     msg.innerHTML = "Please enter a valid time!";
+                    msg.style.visibility="visible";
                     return;
                 }
 
